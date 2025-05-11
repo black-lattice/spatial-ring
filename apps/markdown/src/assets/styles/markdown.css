@@ -1,0 +1,19 @@
+@import "md-editor-v3/lib/style.css";
+
+/* 自定义主题 */
+.md-editor {
+    --md-color: #999;
+    --md-hover-color: #bbb;
+    --md-bk-color: #242424;
+    --md-bk-color-outstand: #333;
+    --md-bk-hover-color: #1b1a1a;
+    --md-border-color: #2d2d2d;
+    --md-border-hover-color: #636262;
+    --md-border-active-color: #777;
+    --md-modal-mask: #00000073;
+    --md-modal-shadow: 0px 6px 24px 2px #00000066;
+    --md-scrollbar-bg-color: #0f0f0f;
+    --md-scrollbar-thumb-color: #2d2d2d;
+    --md-scrollbar-thumb-hover-color: #3a3a3a;
+    --md-scrollbar-thumb-active-color:
+}

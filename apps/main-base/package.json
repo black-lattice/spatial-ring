@@ -1,0 +1,23 @@
+{
+  "name": "main-base",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development vite dev",
+    "build": "NODE_ENV=production vite build",
+    "build:elec": "NODE_ENV=electron vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@micro-zoe/micro-app": "1.0.0-rc.24",
+    "postcss-prefix-selector": "^2.1.1",
+    "qiankun": "^2.10.16",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.2.5"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "cache": false,
+      "dependsOn": ["^build"]
+    },
+    "build:elec": {
+      "cache": false,
+      "dependsOn": ["^build"]
+    },
+    "dev:electron": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": [
+        "dev:main",
+        "dev:markdown",
+        "dev:dynaload"
+      ]
+    },
+    "dev:main": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    },
+    "dev:markdown": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    },
+    "dev:dynaload": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": []
+    }
+  }
+}

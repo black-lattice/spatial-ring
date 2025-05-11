@@ -1,0 +1,39 @@
+{
+  "name": "spatial-ring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "packageManager": "pnpm@9.12.3",
+  "scripts": {
+    "dev": "turbo run dev --filter={main-base,markdown}",
+    "dev:elec": "npm run dev --filter=electron-main",
+    "dev:main": "turbo run dev --filter=main-base",
+    "dev:md": "turbo run dev --filter=markdown",
+    "build:elec": "turbo run build --filter=electron-main",
+    "build:main": "turbo run build:elec --filter=main-base",
+    "build:apps":"turbo run build --filter={markdown}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@arco-design/web-vue": "^2.57.0",
+    "@arco-plugins/vite-vue": "^1.4.5",
+    "axios": "^1.9.0",
+    "monaco-editor": "^0.52.2",
+    "pinia": "^3.0.2",
+    "postcss-prefix-selector": "^2.1.1",
+    "unplugin-auto-import": "^19.1.2",
+    "unplugin-vue-components": "^28.5.0",
+    "vite-plugin-monaco-editor": "^1.1.0",
+    "vite-plugin-monaco-editor-esm": "^2.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "turbo": "^2.5.0"
+  }
+}
