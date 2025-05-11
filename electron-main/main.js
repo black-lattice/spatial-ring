@@ -22,15 +22,15 @@ function createWindow() {
     },
   });
 
-  // 开发环境加载本地服务器
+  // bug：process.env.NODE_ENV读取不到这个值
   if (process.env.NODE_ENV === 'development') {
     win.loadURL('http://localhost:5173');
     win.webContents.openDevTools({ openDevTools: true }); // 打开开发者工具
   } else {
     // 生产环境加载打包后的基座应用
-    // win.loadURL('http://localhost:5173');
-    // win.webContents.openDevTools({ openDevTools: true });
-    win.loadFile(path.join(__dirname, 'dist/index.html'));
+    win.loadURL('http://localhost:5173');
+    win.webContents.openDevTools({ openDevTools: true });
+    // win.loadFile(path.join(__dirname, 'dist/index.html'));
   }
 }
 

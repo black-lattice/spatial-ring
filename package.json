@@ -5,8 +5,7 @@
   "main": "index.js",
   "packageManager": "pnpm@9.12.3",
   "scripts": {
-    "dev": "turbo run dev --filter={main-base,markdown}",
-    "dev:elec": "npm run dev --filter=electron-main",
+    "dev": "turbo run dev --filter={electron-main,main-base,markdown}",
     "dev:main": "turbo run dev --filter=main-base",
     "dev:md": "turbo run dev --filter=markdown",
     "build:elec": "turbo run build --filter=electron-main",
